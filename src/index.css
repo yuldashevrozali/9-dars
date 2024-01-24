@@ -1,0 +1,25 @@
+html,
+body,
+#root{
+    height: 100%;
+}
+
+.layout-logo{
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 1px solid gray;
+}
+
+.layout-logo p{
+    margin-left: -35px;
+    margin-top: 15px;
+    font-weight: 600;
+    
+}
+
+.demo-logo{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+}
