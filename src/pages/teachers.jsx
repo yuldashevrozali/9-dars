@@ -18,7 +18,7 @@ const columns = [
 export default function Teachers() {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState([]);
-  const [form] = Form.useForm(); // Use Form hook to get form instance
+  const [form] = Form.useForm(); 
 
   const onFinish = values => {
     setData([...data, values]);
@@ -26,7 +26,7 @@ export default function Teachers() {
   }
 
   const onClose = () => {
-    form.resetFields(); // Reset form fields when Drawer is closed
+    form.resetFields(); 
     setOpen(false);
   }
 

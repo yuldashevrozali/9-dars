@@ -2,8 +2,6 @@ import { PlusCircleFilled } from "@ant-design/icons";
 import { Button, Drawer, Flex, Form, Input, Table } from "antd";
 import { useState } from "react";
 
-const { TextArea } = Input;
-
 const columns = [
   {
     title: 'sinf',
@@ -23,13 +21,11 @@ export default function Classes() {
   const [form] = Form.useForm(); 
 
   const onFinish = values => {
-    // Create an array of fanlar values
+
     const fanlarArray = Array.from({ length: 5 }, (_, index) => values[`fan${index + 1}`]);
 
-    // Add the new data to the existing data array
     setData([...data, { ...values, fanlar: fanlarArray }]);
 
-    // Close the drawer
     setOpen(false);
   }
 
